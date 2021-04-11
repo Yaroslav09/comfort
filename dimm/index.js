@@ -74,3 +74,50 @@ if (menuIcon.classList.contains('active-arrow')) {
 
 
 
+new Swiper('.swiper-container', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    autoplay: {
+        delay: 4000,
+      },
+      keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+          pageUpDown: true,
+      },
+      slidesPerView: 2,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      loop: true,
+});
+
+new Swiper('.swiper-container-works', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    
+      keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+          pageUpDown: true,
+      },
+
+      slidesPerView: 3,
+      slidesPerColumn: 2,    
+
+      loop: true,     
+});
+
+
+
+// ===============FEEDBACK-FORM=================================
+
+// const popapLinks = document.querySelectorAll('.popap-link');
+// const body = document.querySelector('body');
+// constlockPadding = document.querySelectorAll('.lock-padding');

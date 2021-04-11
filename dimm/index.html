@@ -6,27 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./style.css">
+    
     <title>Document</title>
 </head>
-<div class="page">
+<body>
     <header class="header">
         <div class="container">
             <div class="header-element">
                 <div class="logo-block">
-                    <img class="logo-fail" src="./images/comfort-big-logo.svg" alt="">
-                    <p class="hot-line">
-                       <span>
-                           Гаряча лінія
-                       </span>  <br>                       
-                       <a href="tel:+380950750600" class="tell-hot-line">(095) 0-750-600;</a>
-                       <a href="tel:+380342750600" class="tell-hot-line">(0342) 750-600</a>  
-                    </p>
-                    
-                    <img class="search" src="./images/Vector_search_icon.svg.png" alt="">
-                    
+                    <div class="logo-fail">
+                        <img class="logo-fail-img" src="./images/comfort-logo-norm.png" alt="">
+                    </div>                    
+                    <div class="title-comfort-dim">
+                        <p class="title-name">
+                            Комфортний ДІМ
+                        </p>
+                        <p class="title-slogan">
+                            МИ хочемо, щоб Вам було комфортно з нами!                       
+                        </p>
+                    </div>
+                    <div class="title-search">
+                        <img class="search" src="./images/Vector_search_icon.svg.png" alt="">
+                    </div> 
                 </div>
+                <!-- NAV -->
                 <nav class="nav">
                     <div class="menu-icon">
                         <span></span>
@@ -200,17 +208,18 @@
             </div>            
         </div>
     </header>
+ <div class="page">
     <!-- MAIN -->
     <main class="main">
         
         <!-- INTRO -->
         <section class="intro">
-            <div class="intro-img">
-                <img src="./images/background.png" alt="">
+            <div class="video-pre">
+                <video autoplay muted loop class="intro-video" id="myVideo">
+                    <source src="./images/fr.mp4" type="video/mp4">
+                </video>
             </div>
-            <!-- <video autoplay muted loop class="intro-video" id="myVideo">
-                <source src="./images/franik.mp4" type="video/mp4">
-            </video> -->
+            
             <div class="container">
                 <div class="video-before">
                     <!-- <video autoplay muted loop class="intro-video" id="myVideo">
@@ -230,6 +239,224 @@
                 </div>
             </div>
         </section>
+
+
+<!-- ========================================================== -->
+<!-- ==================SLIDER-NEWS======================================== -->
+<section class="slider">
+    <div class="container">
+        <div class="slaider-inner">
+
+            <!-- Slider main container -->
+            <div class="image-slaider swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="image-slaider-wrapper swiper-wrapper">
+                <!-- Slides -->
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-image">
+                            <a href="#" class="slider-image-link">
+                                <img src="./images/news/Screenshot_1.jpg" alt=""> 
+                                <p class="title-news">
+                                    Новини Комфортного дому
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-image">
+                            <a href="#" class="slider-image-link">
+                                <img src="./images/news/Screenshot_2.jpg" alt=""> 
+                                <p class="title-news">
+                                    Новини Комфортного дому
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-image">
+                            <a href="#" class="slider-image-link">
+                                <img src="./images/news/Screenshot_3.jpg" alt=""> 
+                                <p class="title-news">
+                                    Привітання Марцінківа.
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-image">
+                            <a href="https://www.facebook.com/watch/?v=2874907046058190" target="_blank" class="slider-image-link">
+                                <img src="./images/news/Screenshot_4.jpg" alt=""> 
+                                <p class="title-news">
+                                    Привітання директора.
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    
+                    
+                                      
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        
+        </div>
+    </div>
+</section>
+
+<!-- ===============SLIDER TWO============================= -->
+
+<section class="slider-works">
+    <div class="container">
+        <div class="slaider-works-inner">
+
+            <h5 class="slaider-works-title">Виконані роботи</h5>
+            <!-- Slider main container -->
+            <div class="image-slaider-works swiper-container-works">
+                <!-- Additional required wrapper -->
+                <div class="image-slaider-works-wrapper swiper-wrapper">
+                <!-- Slides -->
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/works/1.jpg" alt=""> 
+                                <p class="title-news">
+                                    Що зроблено
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/works/3.jpg" alt=""> 
+                                <p class="title-news">
+                                    Що зроблено
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div> 
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/works/4.jpg" alt=""> 
+                                <p class="title-news">
+                                    Що зроблено
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/works/5.jpg" alt=""> 
+                                <p class="title-news">
+                                    Що зроблено
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>        
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/works/6.jpg" alt=""> 
+                                <p class="title-news">
+                                    Що зроблено
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/works/7.jpg" alt=""> 
+                                <p class="title-news">
+                                    Що зроблено
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>        
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/works/8.jpg" alt=""> 
+                                <p class="title-news">
+                                    Що зроблено
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/works/9.jpg" alt=""> 
+                                <p class="title-news">
+                                    Що зроблено
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>        
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/works/10.jpg" alt=""> 
+                                <p class="title-news">
+                                    Що зроблено
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/works/2.jpg" alt=""> 
+                                <p class="title-news">
+                                    Що зроблено
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>              
+                    
+                                      
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev button-works-prev"></div>
+                <div class="swiper-button-next button-works-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         <!-- MY MANAGER -->
         <section class="manager">
@@ -316,7 +543,7 @@
         </div>
     </footer>
 
-</div>
+ </div>
 
 
 
@@ -328,15 +555,52 @@
             <a class = "tel1" href="tel:+380950750600">(095) 07-50-600</a> <br> 
             <a class = "tel1" href="tel:+380342750600">(034) 27-50-600</a>
             <button>
-                <p>написати директору</p>
+                <a href="#popap-feedback" class="popup-button">написати директору</a>
             </button>
             
         </div>
         <div class="in-facebook">            
             <a href="https://www.facebook.com/KomfortDim/" target="blank"> <span>Ми у Facebook</span> </a> 
-        </div>      
-        
+        </div> 
     </div>
+
+    <div id = "popap-feedback" class = "popap-feedback popap-link">
+                
+            
+            <form action="#" method="post" id = "feedback-form" class="popap-feedback-form" >
+                <a href="#" class="popap-feedback-close">×</a>                                  
+                <h2 class="form-title">Ми почуємо кожного</h2>  
+                <fieldset>
+                    <div class="form-item">
+                        <label for="fname" class="form-label">Ім'я*:</label>
+                        <input type="text" id="fname" class="form-input _req" name="fname" placeholder="Введіть ваше ім'я" >
+                    </div>
+                    <div class="form-item">
+                        <label for="lname" class="form-label">Прізвище*:</label>
+                        <input type="text" id="lname" class="form-input _req" name="lname" placeholder="Введіть ваше прізвище">
+                    </div>
+                    <div class="form-item">
+                        <label for="phone" class="form-label">Телефон*:</label>
+                        <input type="tel" id="phone" class="form-input _req" name="phone" placeholder="Введіть ваш номер телефону">
+                    </div>
+                    <div class="form-item">
+                        <label for="email" class="form-label">Email*:</label>
+                        <input type="email" id="email" class="form-input _req _email" name="email" placeholder="Введіть ваш email">
+                    </div>
+                    <div class="form-item">
+                        <label for="message" class="form-label">Напишіть нам:</label>
+                        <textarea name="message" id="message" class="form-input" placeholder="Введіть ваше повідомлення"></textarea>
+                        
+                    </div>
+                    <button type="submit" class="form-button">Надіслати</button>
+                </fieldset>                
+            </form>        
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
+    <script src="./form.js"></script>
+    
 </body>
 </html>
