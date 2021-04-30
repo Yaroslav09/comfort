@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Комфортний дім</title>
+</head>
+<body>
+    <header class="header">        
+            <div class="header-element">
+                <div class="logo-block">
+                    <!-- <div class="container"> -->
+                        <div class="logo-block-inner">
+                            
+                            <div class="top-header-title">
+                                <p>Управляюча компанія</p>
+                            </div>
+                            <div class="top-header-nav">
+                                <ul class="top-header-nav-list">
+                                    <li class="top-header-nav-item"><a href="#">Довідник</a></li>
+                                    <li class="top-header-nav-item"><a href="#">Контакти</a></li>
+                                    <li class="top-header-nav-item"><a href="#popap-feedback" class="header-button"> <span>Написати директору</span></a></li>
+                                    <li class="top-header-nav-item"><a href="#"><img src="./images/eye_white.svg" alt="eye"></a></li>
+                                    <li class="top-header-nav-item"> <a href="#"><img src="./images/search-white.svg" alt=""></a></li>
+                                    <li class="top-header-nav-item"><a href="http://portal.dimif.if.ua/" target="blank" class="top-header-nav-link cabinet">Мій кабінет</a></li>
+                                    <li class="top-header-nav-item"><a href="http://portal.dimif.if.ua/" target="blank" class="nav-list-item-link"> <img src="./images/home.svg" alt=""> </a></li>
+                                </ul>    
+                            </div>
+                                   
+                                                            
+                        </div>
+                    <!-- </div> -->
+                </div>
+                <!-- NAV -->
+                
+            <div class="naw-wrapper">
+                <div class="logo-fail-nav">
+                    <img class="logo-fail-nav-img" src="./images/comfort-logo-norm.png" alt="">
+                    <div class="title-comfort-dim-nav">                    
+                        <p class="title-name-nav">
+                            "Комфортний <br> <span>дім"</span> 
+                            <img src="./images/green-heart1.png" alt="green heart" class="heart">
+                        </p>                    
+                    </div>   
+                </div>   
+                
+              <div class="container">
+                <nav class="nav">
+                    <div class="menu-icon">
+                        <span></span>
+                    </div>
+                    <ul class="nav-list nav-nav-list">
+                        <!-- ГОЛОВНА -->
+                        <li class="nav-list-item">
+                            <a href="#" class="nav-list-item-link">Головна</a>
+                        </li>
+                        <!-- ПРО НАС -->
+                        <li class="nav-list-item">
+                            <a href="#" class="nav-list-item-link">Про нас</a>
+                            <span class="nav-arrow"></span>
+                            <ul class="sub-nav-list">
+                                <li class="sub-list-item"><a href="./pages/leadership.html" target="_blank" class="sub-list-link">Керівництво</a></li>
+                                <li class="sub-list-item"><a href="./pages/structure.html" target="_blank" class="sub-list-link">Структура</a></li>
+                                <li class="sub-list-item"><a href="./pages/structure.html" target="_blank" class="sub-list-link">Вакансії</a></li>
+                                <li class="sub-list-item"><a href="./pages/directory.html" target="_blank" class="sub-list-link">Довідник</a></li>
+                                <li class="sub-list-item"><a href="./pages/about.html" target="_blank" class="sub-list-link">Про нас</a></li>                                
+                            </ul>
+                        </li>
+                         <!-- ДОКУМЕНТИ -->
+                         <li class="nav-list-item">
+                            <a href="#" class="nav-list-item-link">Документи</a>
+                            <span class="nav-arrow"></span>
+                            <ul class="sub-nav-list">
+                                <li class="sub-list-item">
+                                    <a href="" class="sub-list-link">Нормативно-правова база</a>
+                                    <ul class="second-sub-nav-list">
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Законодавство</a>
+                                            <ul class="third-sub-nav-list">
+                                                <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Закони України</a></li>
+                                                <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Статут підприємства</a></li>
+                                                <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Розпорядчі документи</a></li>
+                                                <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Роспорядження</a></li>
+                                                <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Накази</a></li>
+                                                <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Рішення сесії та МВК</a></li>
+                                            </ul>
+                                        </li>                                        
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Проєкти документів</a>
+                                        </li>
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Антикорупційне законодавство</a>
+                                        </li>
+                                    </ul>
+                                </li>                              
+                                <li class="sub-list-item">
+                                    <a href="" class="sub-list-link">Документи</a>
+                                    <ul class="second-sub-nav-list">
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Бланки</a>
+                                            <ul class="third-sub-nav-list">
+                                                <li class="third-sub-list-item"><a href="" class="third-sub-list-link">договору на утримання ЖБ та прибудинкової території</a></li>
+                                                <li class="third-sub-list-item"><a href="" class="third-sub-list-link">договору про розірвання угоди</a></li>
+                                                <li class="third-sub-list-item"><a href="" class="third-sub-list-link">заяви</a></li>
+                                                <li class="third-sub-list-item"><a href="" class="third-sub-list-link">протоколів</a></li>
+                                            </ul>
+                                        </li>                                        
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Проєктно-кошторисна документація</a>
+                                        </li>
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Договори підрядних організацій</a>
+                                        </li>
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Акти виконаних робіт</a>
+                                        </li>
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Акти приймання-передачі</a>
+                                        </li>
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Протоколи зборів</a>
+                                        </li>
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Фінансовий звіт</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-list-item">
+                                    <a href="" class="sub-list-link">Публічні закупівлі</a>
+                                </li>
+                                <!-- <li class="sub-list-item">
+                                    <a href="" class="sub-list-link">Тендери <br> (оголошення на прозорро)</a>
+                                </li> -->
+                                <li class="sub-list-item">
+                                    <a href="" class="sub-list-link">Конкурси</a>
+                                </li>
+                                <li class="sub-list-item">
+                                    <a href="" class="sub-list-link">Тарифи</a>
+                                </li>
+                                <li class="sub-list-item">
+                                    <a href="https://data.gov.ua/" class="sub-list-link" target="blank" >data.gov.ua <br> (портал відкритих даних)</a>
+                                </li>
+                                <li class="sub-list-item">
+                                    <a href="https://spending.gov.ua/new/disposers" class="sub-list-link" target="blank">spending.gov.ua</a>
+                                </li>
+                                <li class="sub-list-item">
+                                    <a href="" class="sub-list-link">Роботи</a>
+                                    <ul class="second-sub-nav-list second-sub-nav-list-work ">
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Річні плани</a>
+                                        </li>                                        
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Фотозвіти та виконані роботи</a>
+                                        </li>
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Плани робіт</a>
+                                        </li>
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Графіки підрядників</a>
+                                        </li>
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Звіти про підряди</a>
+                                        </li>
+                                        <li class="second-sub-list-item">
+                                            <a href="" class="second-sub-list-link">Перевірки</a>
+                                        </li>                                        
+                                    </ul>
+                                </li>
+                                <li class="sub-list-item">
+                                    <a href="https://www.facebook.com/HotelBanderstadt/" class="sub-list-link" target="blank">Про готель "Бандерштат"</a>
+                                </li>                                    
+                            </ul>
+                        </li>
+                        <!-- НОВИНИ ЖКГ -->
+                        <li class="nav-list-item">
+                            <a href="#" class="nav-list-item-link">Новини ЖКГ</a>
+                            <span class="nav-arrow"></span>
+                            <ul class="sub-nav-list">
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Дороги</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Благоустрій</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Будинкове управління</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Водопостачання</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Газопостачання</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Електропостачання</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Теплопостачання</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Побутові відходи</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Транспорт</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Новини по Україні</a></li>
+                            </ul>
+                        </li>
+                        <!-- НОВИНИ КД -->
+                        <li class="nav-list-item">
+                            <a href="#" class="nav-list-item-link">Новини КД</a>
+                            <span class="nav-arrow"></span>
+                            <ul class="sub-nav-list">
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Повідомлення</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Прес-реліз</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Публікації</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Галерея (звіти)</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Перевірки</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Звіти</a></li>
+                                <li class="sub-list-item"><a href="https://www.facebook.com/KomfortDim/" target="balnk" class="sub-list-link">Ми у Facebook</a></li>
+                                <li class="sub-list-item"><a href="https://www.facebook.com/HotelBanderstadt/" target="blank" class="sub-list-link">Готель "Бандерштат"</a></li>
+                                <li class="sub-list-item"><a href="#" class="sub-list-link">Різне</a></li>
+                            </ul>
+                        </li>
+                        <!-- КАРТИ РОБІТ -->
+                        <li class="nav-list-item">
+                            <a href="http://62.122.204.249/map/" target="blank" class="nav-list-item-link">Карти робіт</a>                            
+                        </li>
+                        <!-- ПОСЛУГИ -->
+                        <li class="nav-list-item">
+                            <a href="#" class="nav-list-item-link">Послуги</a>
+                            <span class="nav-arrow"></span>
+                            <ul class="sub-nav-list">
+                                <li class="sub-list-item"><a href="./pages/services.html" target="_blank" class="sub-list-link">Послуги</a></li>
+                                <li class="sub-list-item"><a href="" class="sub-list-link">Додаткові послуги</a></li>                                                                
+                            </ul>
+                        </li>
+                        
+                       
+                        <!-- КОНТАКТ_ЦЕНТРИ -->
+                        <li class="nav-list-item">
+                            <a href="./pages/contact-center.html" target="_blank" class="nav-list-item-link">Контакт-центри</a>
+                        </li>
+                        <!-- <li class="nav-list-item personal-office">
+                            <a href="http://portal.dimif.if.ua/" target="blank" class="nav-list-item-link">Особистий кабінет</a>
+                        </li> -->
+                    </ul>                    
+                </nav>
+             </div>
+            </div>
+        </div>            
+        
+    </header>
+ <div class="page">
+    <!-- MAIN -->
+    <main class="main">
+        
+        
+        <!-- INTRO -->
+        <section class="intro">
+            <div class="video-pre">
+                <video autoplay muted loop class="intro-video" id="myVideo">
+                    <source src="./images/fr.mp4" type="video/mp4">
+                </video>
+            </div>  
+
+            <!-- <div class="container">                 -->
+                <div class="intro-inner">
+                    <div class="slogan">
+                        <p class = "title-slogan-intro">КП "Комфортний дім"</p>
+                        <p class="slogan-slogan">
+                            МИ хочемо, щоб Вам було комфортно з нами!
+                        </p>
+                    </div>
+                    <!-- <div class="intro-social-icon">
+                        <ul class="social-icon-list">
+                            <li class="social-item">
+                                <a href="https://www.facebook.com/KomfortDim/" target="_blank" class="social-icon-link">
+                                    <span class="icon facebook-icon"></span>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="" class="social-icon-link">
+                                    <span class="icon massanger-icon"></span>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="" class="social-icon-link">
+                                    <span class="icon youtube-icon"></span>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="" class="social-icon-link">
+                                    <span class="icon telegram-icon"></span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div> -->
+                </div> 
+            <!-- </div> -->
+        </section>
+
+        
+
+
+<!-- ========================================================== -->
+<!-- ==================SLIDER-NEWS======================================== -->
+<section class="slider">
+    <!-- <div class="container"> -->
+        <div class="slaider-inner">
+
+            <!-- Slider main container -->
+            <div class="image-slaider swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="image-slaider-wrapper swiper-wrapper">
+                <!-- Slides -->
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-image">
+                            <a href="#" class="slider-image-link">
+                                <img src="./images/news/Screenshot_1.jpg" alt=""> 
+                                <p class="title-news">
+                                    Новини Комфортного дому
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-image">
+                            <a href="#" class="slider-image-link">
+                                <img src="./images/news/Screenshot_2.jpg" alt=""> 
+                                <p class="title-news">
+                                    Новини Комфортного дому
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-image">
+                            <a href="#" class="slider-image-link">
+                                <img src="./images/news/Screenshot_3.jpg" alt=""> 
+                                <p class="title-news">
+                                    Привітання Марцінківа.
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-image">
+                            <a href="https://www.facebook.com/watch/?v=2874907046058190" target="_blank" class="slider-image-link">
+                                <img src="./images/news/Screenshot_4.jpg" alt=""> 
+                                <p class="title-news">
+                                    Привітання директора.
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    
+                    
+                                      
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        
+        </div>
+    <!-- </div> -->
+</section>
+
+<!-- ===============SLIDER TWO============================= -->
+
+<section class="slider-works">
+    <!-- <div class="container"> -->
+        <div class="slaider-works-inner">
+
+            <h5 class="slaider-works-title">Виконані роботи</h5>
+            <!-- Slider main container -->
+            <div class="image-slaider-works swiper-container-works">
+                <!-- Additional required wrapper -->
+                <div class="image-slaider-works-wrapper swiper-wrapper">
+                <!-- Slides -->
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/title-slider/garden.jpg" alt=""> 
+                                <p class="title-news">
+                                    Косіння трави
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/title-slider/light.jpg" alt=""> 
+                                <p class="title-news">
+                                    Освітлення та елктропостачання
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div> 
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/title-slider/44730a.jpg" alt=""> 
+                                <p class="title-news">
+                                    монтаж, демонтаж
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/title-slider/lift.png" alt=""> 
+                                <p class="title-news">
+                                    ліфтове господарство
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>        
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/title-slider/clean.jpg" alt=""> 
+                                <p class="title-news">
+                                    прибирання прибудинкових територій
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/title-slider/clean1.jpg" alt=""> 
+                                <p class="title-news">
+                                    прибирання сходових кліток
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>           
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/title-slider/roof.jpg" alt=""> 
+                                <p class="title-news">
+                                    обслуговування дахів
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>        
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/title-slider/truba.jpg" alt=""> 
+                                <p class="title-news">
+                                    водопровідні мережі
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/title-slider/Webp.net-compress-image.jpg" alt=""> 
+                                <p class="title-news">
+                                    ремонт електрощитових
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>        
+                    <div class="image-slaider-slide swiper-slide">
+                        <div class="image-slider-works-image">
+                            <a href="#" class="slider-works-image-link">
+                                <img src="./images/title-slider/children.jpg" alt=""> 
+                                <p class="title-news">
+                                    дитячі майданчики
+                                </p>
+                            </a>                            
+                        </div>                        
+                    </div>
+                       
+                    
+                                      
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev button-works-prev"></div>
+                <div class="swiper-button-next button-works-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        
+        </div>
+    <!-- </div> -->
+</section>
+
+<!-- ============================== -->
+
+
+
+<!-- EVENT -->
+<section class="event">
+    <div class="container">
+        <div class="event-element">
+            <h2>Поточні роботи</h2>
+            <iframe src="https://1580.if.ua/frame/?jid=4&fs=8&hr=0"></iframe>                    
+        </div>
+    </div>
+</section>
+
+
+<!-- MY MANAGER -->
+<section class="manager">
+    <div class="container">
+        <div class="manager-form">
+            <h3>Мій управитель</h3>            
+            <form class="manager-form-send">
+                <input class="submit-email" type="search" placeholder="Введіть назву вулиці">
+                <input class="submit-btn" type="submit"  value="Пошук">
+            </form>  
+        </div>
+    </div>
+</section>
+
+
+
+
+
+        
+        
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-elem">   
+                <div class="logo-footer-block">
+                    <a href="" class="logo-footer">
+                        <img class="logo-fail-footer" src="./images/comfort-big-logo.svg" alt="">
+                        <h1>КП "Комфортний дім" <br> Івано-Франківськ</h1>
+                    </a>                       
+                </div>  
+                
+                <div class="map-block">
+                    <div class="adddress">
+                        <p>
+                            <a href="https://goo.gl/maps/3awhNbH5aNVnTp886" target="blank">
+                                вул. Незалежності, 161 <br>
+                                м. Івано-Франківськ <br>
+                                76002 Україна
+                            </a>
+                        </p>
+                        <br>
+                        <p>
+                            <a href="mailto:info.dimif@gmail.com">info.dimif@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.9187200938086!2d24.728174915805475!3d48.916940804536225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c166aed1f927%3A0xefec7766703ec970!2z0LLRg9C70LjRhtGPINCd0LXQt9Cw0LvQtdC20L3QvtGB0YLRliwgMTYxLCDQhtCy0LDQvdC-LdCk0YDQsNC90LrRltCy0YHRjNC6LCDQhtCy0LDQvdC-LdCk0YDQsNC90LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc2MDAw!5e0!3m2!1suk!2sua!4v1616687508182!5m2!1suk!2sua" width="1000px" height="300" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                        
+                    </div>                
+                </div>
+
+                <!-- <div class="comunalka">                  
+                    <ul class="comunalka-city">
+                        <li class="comunalka-item">
+                            <h4>Комуналка міста</h4>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="https://www.mrada.if.ua/" target="blank">Івано-Франківська міська рада</a>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="http://www.mvk.if.ua/" target="blank">Виконком міської ради</a>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="http://www.komynalka.com.ua/" target="blank">Департамент житлової, комунальної політики та благоустрою</a>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="#">Новостворений департамент</a>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="https://new.vodokanal.if.ua/" target="blank">Івано-Франківськводоекотехпром</a>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="http://tke.if.ua/" target="blank">Теплокомуненерго</a>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="https://oe.if.ua/uk" target="blank">Прикарпаттяобленерго</a>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="http://misksvitlo.if.ua/" target="blank">КП "Міськсвітло"</a>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="#">Газовня</a>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="https://m.facebook.com/HotelBanderstadt/" target="blank">Готель "Бандерштадт"</a>
+                        </li>
+                        <li class="comunalka-item">
+                            <a href="http://www.stek.if.ua/" target="blank">СТЕК</a>
+                        </li>
+                    </ul> 
+                </div>              -->
+                                    
+                <div class="comunalka">     
+                    <h4>Комуналка міста</h4>             
+                    <ul class="comunalka-city">
+                        <div class="block">
+                            <li class="comunalka-item">
+                                <a href="https://www.mrada.if.ua/" target="blank">Івано-Франківська міська рада</a>
+                            </li>
+                            <li class="comunalka-item">
+                                <a href="http://www.mvk.if.ua/" target="blank">Виконком міської ради</a>
+                            </li>
+                            <li class="comunalka-item">
+                                <a href="http://www.komynalka.com.ua/" target="blank">Департамент житлової, комунальної політики та благоустрою</a>
+                            </li>
+                            
+                        </div> 
+                        <div class="block">
+                            <li class="comunalka-item">
+                                <a href="#">Новостворений департамент</a>
+                            </li>
+                            <li class="comunalka-item">
+                                <a href="https://new.vodokanal.if.ua/" target="blank">Івано-Франківськводоекотехпром</a>
+                            </li>
+                            <li class="comunalka-item">
+                                <a href="http://tke.if.ua/" target="blank">Теплокомуненерго</a>
+                            </li>
+                            <li class="comunalka-item">
+                                <a href="https://oe.if.ua/uk" target="blank">Прикарпаттяобленерго</a>
+                            </li>
+                            
+                        </div>    
+                        <div class="block">
+                            <li class="comunalka-item">
+                                <a href="http://misksvitlo.if.ua/" target="blank">КП "Міськсвітло"</a>
+                            </li>
+                            <li class="comunalka-item">
+                                <a href="#">Газовня</a>
+                            </li>
+                            <li class="comunalka-item">
+                                <a href="https://m.facebook.com/HotelBanderstadt/" target="blank">Готель "Бандерштадт"</a>
+                            </li>
+                            <li class="comunalka-item">
+                                <a href="http://www.stek.if.ua/" target="blank">СТЕК</a>
+                            </li>
+                        </div>  
+                    </ul> 
+                </div>             
+                
+
+            </div>           
+                   
+        </div>
+    </footer>
+
+ </div>
+
+
+
+
+
+    <div class="popap">  
+        <a href="#popap-feedback1" class="popup-button"><img src="./images/ask.png" alt=""></a>
+    </div>
+
+    <!-- ==============FEEDBACK_FORM======================= -->
+
+    <div id = "popap-feedback" class = "popap-feedback popap-link">
+                
+            
+            <form action="#" method="post" id = "feedback-form" class="popap-feedback-form" >
+                <a href="#" class="popap-feedback-close">×</a>                                  
+                <!-- <h2 class="form-title">Ми почуємо кожного</h2> -->
+                <div class="form-title">
+                    <p>Ми знаходимо в житті лише те,</p>
+                    <p>що самі вкладаємо в нього</p>
+                    <p class = "form-title-last"><span>(Ральф Уолдо Емерсон)</span></p>
+                </div>  
+                <fieldset>
+                    <div class="form-item">
+                        <label for="fname" class="form-label">Ім'я*:</label>
+                        <input type="text" id="fname" class="form-input _req" name="fname" placeholder="Введіть ваше ім'я" >
+                    </div>
+                    <div class="form-item">
+                        <label for="lname" class="form-label">Прізвище*:</label>
+                        <input type="text" id="lname" class="form-input _req" name="lname" placeholder="Введіть ваше прізвище">
+                    </div>
+                    <div class="form-item">
+                        <label for="phone" class="form-label">Телефон*:</label>
+                        <input type="tel" id="phone" class="form-input _req" name="phone" placeholder="Введіть ваш номер телефону">
+                    </div>
+                    <div class="form-item">
+                        <label for="email" class="form-label">Email*:</label>
+                        <input type="email" id="email" class="form-input _req _email" name="email" placeholder="Введіть ваш email">
+                    </div>
+                    <div class="form-item">
+                        <label for="message" class="form-label">Напишіть нам:</label>
+                        <textarea name="message" id="message" class="form-input" placeholder="Введіть ваше повідомлення"></textarea>
+                        
+                    </div>
+                    <button type="submit" class="form-button">Надіслати</button>
+                </fieldset>                
+            </form>        
+    </div>
+
+    <!-- =============== -->
+    <div id = "popap-feedback1" class = "popap-feedback popap-link">
+                
+            
+        <form action="#" method="post" id = "feedback-form" class="popap-feedback-form" >
+            <a href="#" class="popap-feedback-close">×</a>                                  
+            <h2 class="form-title">Ми почуємо кожного</h2>
+            <!-- <div class="form-title">
+                <p>"Ми почуємо кожного"</p>    
+            </div>   -->
+            <fieldset>
+                <div class="form-item">
+                    <label for="fname" class="form-label">Ім'я*:</label>
+                    <input type="text" id="fname" class="form-input _req" name="fname" placeholder="Введіть ваше ім'я" >
+                </div>
+                <div class="form-item">
+                    <label for="lname" class="form-label">Прізвище*:</label>
+                    <input type="text" id="lname" class="form-input _req" name="lname" placeholder="Введіть ваше прізвище">
+                </div>
+                <div class="form-item">
+                    <label for="phone" class="form-label">Телефон*:</label>
+                    <input type="tel" id="phone" class="form-input _req" name="phone" placeholder="Введіть ваш номер телефону">
+                </div>
+                <div class="form-item">
+                    <label for="email" class="form-label">Email*:</label>
+                    <input type="email" id="email" class="form-input _req _email" name="email" placeholder="Введіть ваш email">
+                </div>
+                <div class="form-item">
+                    <label for="message" class="form-label">Напишіть нам:</label>
+                    <textarea name="message" id="message" class="form-input" placeholder="Введіть ваше повідомлення"></textarea>
+                    
+                </div>
+                <button type="submit" class="form-button">Надіслати</button>
+            </fieldset>                
+        </form>        
+</div>
+
+<div class="circle-side-bar">
+    <div class="circle-side-bar-inner">
+        <div class="intro-social-icon">
+            <ul class="social-icon-list">
+                <li class="social-item">
+                    <a href="https://www.facebook.com/KomfortDim/" target="_blank" class="social-icon-link">
+                        <span class="icon facebook-icon"></span>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="" class="social-icon-link">
+                        <span class="icon massanger-icon"></span>
+                    </a>
+                </li>
+                <li class="social-item social-item-tel">
+                    <a href="tel:0342750600">(0342)750600</a>
+                    <a href="tel:0950750600">(0950)750600</a>
+                </li>
+                <!-- <li class="social-item social-item-tel"></li> -->
+                <li class="social-item">
+                    <a href="" class="social-icon-link">
+                        <span class="icon youtube-icon"></span>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="" class="social-icon-link">
+                        <span class="icon telegram-icon"></span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="./form.js"></script>
+    
+</body>
+</html>
