@@ -1,0 +1,227 @@
+
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 160px;
+  background-color: #050505d2;
+  z-index: 4;
+ 
+}
+.header-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 160px;
+}
+.logo-block {
+  position: relative;
+  display: flex;
+  left: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =============================HEART=========================================== */
+
+  /* HEART */
+  
+  .heart {
+    position: absolute;
+    width: 40px;    
+    margin: 0px 0px 0px 10px;
+    animation: heartbeat 1s infinite;    
+    display: inline-block;       
+  }
+  
+  @keyframes heartbeat
+  {
+    0%
+    {
+      transform: scale( 1 )       
+    }
+    20%
+    {
+      transform: scale( 1.2 )       
+    }
+     30%
+    {
+      transform: scale( 1.4 )       
+    }
+  }
+
+
+.logo-img img {
+  position: relative;
+  width: 140px;
+  height: 125px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.246);
+  border-radius: 50%;
+}
+  .title-name-nav {
+    position: relative;
+    font-family: 'Russo One', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    text-align: center;
+    color: #fff;
+    line-height: 38px;
+}
+
+
+/* NAV */
+.nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  right: 60px;
+  
+}
+
+.nav-top {
+  position: relative;
+  right: 15px;
+  top: -20px;
+}
+.social-icon-list {
+  position: relative;
+  display: flex;
+}
+.social-icon-item {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  margin: 0px 6px;
+  align-items: center;
+}
+.social-icon-item a {
+  position: relative;
+  font-family: 'Russo One', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: #272823;
+  padding: 6px 10px;
+  
+}
+.social-icon-item-a {
+  color: #fff;
+  margin: 10px;
+}
+
+/* NAV BOTTOM */
+.nav-bottom {
+  position: relative;
+  top: 25px;
+}
+.nav-bottom-list {
+  position: relative;
+  display: flex;
+}
+.nav-bottom-item {
+  margin: 5px 15px;
+  
+}
+.nav-bottom-item a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* INTRO */
+.intro {
+  position: relative;
+}
+.intro_innet {
+  background-image: url(./ivano_fr1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+}
+.intro_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #2f1202f3;
+}
+
+
+
+
+/* ============================= */
+.top-header-nav-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list-item-link {
+  position: relative;
+  margin-right: -30px;
+}
+.top-header-nav-item {
+  margin-left: 30px;
+}
+
+.top-header-nav-item a {
+  font-size: 18px;
+  color: #fff;
+}
+.top-header-nav-item .cabinet {
+  display: inline-block;
+  font-family: 'Caveat', cursive;
+  font-size: 26px;
+  text-align: center;
+  line-height: 22px;
+  width: 75px;
+  margin-right: 15px;
+}
+/* ===========НАПИСАТИ ДИРЕКТОРУ================== */
+.top-header-nav-item .header-button {
+  position: relative;
+  padding: 6px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;       
+  
+  background-color: #642802;  
+  /* border: 1px solid #3b0a0f; */
+  border-radius: 5px; 
+  width: 200px;
+  height: 35px; 
+  margin-top: 7px;
+}
+
+/* ===================================== */
+.slogan { 
+  position: relative;  
+  display: inline-block;      
+  color: #fff;
+  line-height: 50px;
+  top: 8%;
+  margin-left: 3%;
+}
+
+.title-slogan-intro {
+  font-size: 40px;
+  font-weight: 900;
+  font-style: normal;
+}
+.slogan-slogan {
+font-family: 'Caveat', cursive;
+font-size: 50px;
+font-weight: 400;
+font-style: normal;
+}
