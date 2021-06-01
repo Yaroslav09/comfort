@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Підключення фавіконів -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+  <!-- Підключення шрифтів -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- Підключення стилів -->
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Комфортний дім</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- LOGO BLOCK -->
+        <div class="logo-block">
+          <div class="logo-img">
+            <img src="./assets/images/best_logo.png" alt="logo comfort house">
+          </div>
+          <div class="logo-title">
+            <p class="title-name-nav">
+              "Комфортний <br> <span>дім"</span> 
+              <img src="./assets/images/green-heart1.png" alt="icon green heart" class="heart">
+            </p>          
+          </div>
+        </div>
+        <!-- NAV BLOCK -->
+        <nav class="nav">
+          <!-- NAV TOP -->
+          <div class="nav-top">
+            <ul class="social-icon-list">
+              <!-- Верхнє меню HEADER-->
+              <li class="top-header-nav-item"><a href="#">Довідник</a></li>
+              <li class="top-header-nav-item"><a href="#">Контакти</a></li>
+              <li class="top-header-nav-item"><a href="#popap-feedback" class="header-button"> <span>Написати директору</span></a></li>
+              <li class="top-header-nav-item"><a href="#"><img src="./assets/icons/eye_white.svg" alt="icon eye"></a></li>
+              <li class="top-header-nav-item"> <a href="#"><img src="./assets/icons/search-white.svg" alt="icon search"></a></li>
+              <li class="top-header-nav-item"><a href="http://portal.dimif.if.ua/" target="blank" class="nav-list-item-link"> <img src="./assets/icons/home.svg" alt="icon home"> </a></li>
+              <li class="top-header-nav-item"><a href="http://portal.dimif.if.ua/" target="blank" class="top-header-nav-link cabinet">Мій кабінет</a></li>
+              <!-- Посилання на соціальні мережі HEADER-->
+              <li class="social-icon-item">
+                <a href="https://www.facebook.com/KomfortDim/" target="_blank" class="social-icon-link">
+                  <span class="icon facebook-icon"></span>
+                </a>
+              </li>
+              <li class="social-icon-item">
+                <a href="" class="social-icon-link">
+                  <span class="icon massanger-icon"></span>
+                </a>
+              </li>
+              <li class="social-icon-item">
+                <a href="" class="social-icon-link">
+                  <span class="icon youtube-icon"></span>
+                </a>
+              </li>
+              <li class="social-icon-item">
+                <a href="" class="social-icon-link">
+                  <span class="icon telegram-icon"></span>
+              </a>
+              </li>
+              
+            </ul>
+          </div>
+          <!-- NAV BOTTOM HEADER -->
+          <div class="nav-bottom">
+            <ul class="nav-bottom-list">
+              <li class="nav-bottom-item"><a href="#">Головна</a></li>
+              <li class="nav-bottom-item"><a href="#">Про нас</a></li>
+              <li class="nav-bottom-item"><a href="#">Документи</a></li>
+              <li class="nav-bottom-item"><a href="#">Публічні закупівлі</a></li>
+              <li class="nav-bottom-item"><a href="#">Новини ЖКГ</a></li>
+              <li class="nav-bottom-item"><a href="#">Новини КД</a></li>
+              <li class="nav-bottom-item"><a href="#">Карти робіт</a></li>
+              <li class="nav-bottom-item"><a href="#">Послуги</a></li>
+              <li class="nav-bottom-item"><a href="#">Контакт центри</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- ============== FEEDBACK_FORM (НАПИСАТИ ДИРЕКТОРУ)======================= -->
+        <div id = "popap-feedback" class = "popap-feedback popap-link">
+          <form action="#" method="post" id = "feedback-form" class="popap-feedback-form" >
+              <a href="#" class="popap-feedback-close">×</a>                                  
+              <!-- <h2 class="form-title">Ми почуємо кожного</h2> -->
+              <div class="form-title">
+                  <p>Ми знаходимо в житті лише те,</p>
+                  <p>що самі вкладаємо в нього</p>
+                  <p class = "form-title-last"><span>(Ральф Уолдо Емерсон)</span></p>
+              </div>  
+              <fieldset>
+                  <div class="form-item">
+                      <label for="fname" class="form-label">Ім'я*:</label>
+                      <input type="text" id="fname" class="form-input _req" name="fname" placeholder="Введіть ваше ім'я" >
+                  </div>
+                  <div class="form-item">
+                      <label for="lname" class="form-label">Прізвище*:</label>
+                      <input type="text" id="lname" class="form-input _req" name="lname" placeholder="Введіть ваше прізвище">
+                  </div>
+                  <div class="form-item">
+                      <label for="phone" class="form-label">Телефон*:</label>
+                      <input type="tel" id="phone" class="form-input _req" name="phone" placeholder="Введіть ваш номер телефону">
+                  </div>
+                  <div class="form-item">
+                      <label for="email" class="form-label">Email*:</label>
+                      <input type="email" id="email" class="form-input _req _email" name="email" placeholder="Введіть ваш email">
+                  </div>
+                  <div class="form-item">
+                      <label for="message" class="form-label">Напишіть нам:</label>
+                      <textarea name="message" id="message" class="form-input" placeholder="Введіть ваше повідомлення"></textarea>
+                      
+                  </div>
+                  <button type="submit" class="form-button">Надіслати</button>
+              </fieldset>                
+          </form>        
+        </div>
+        <!-- END FEEDBACK_FORM -->
+
+
+      </div>
+    </div>
+  </header>
+  <!-- <section class="intro">
+    <div class="intro_innet">
+      <div class="intro_bottom">
+        <div class="slogan">
+          <p class = "title-slogan-intro">КП "Комфортний дім"</p>
+          <p class="slogan-slogan">
+              МИ хочемо, щоб Вам було комфортно з нами!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  
+</body>
+</html>

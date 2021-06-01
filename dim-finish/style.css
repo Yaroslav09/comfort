@@ -1,0 +1,643 @@
+/* =========== HEADER ================ */
+.header {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  background-color: #050505d2;
+  z-index: 4;
+ 
+}
+.header-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+}
+
+/* ====== LOGO BLOCK ========= */
+.logo-block {
+  position: relative;
+  display: flex;
+  left: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-img img {
+  position: relative;
+  width: 140px;
+  height: 130px;
+  margin-top: 7%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.title-name-nav {
+  position: relative;
+  font-family: 'Russo One', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  line-height: 38px;
+}
+/* --------- HEART -------- */
+.heart {
+  position: absolute;
+  width: 40px;    
+  margin: 0px 0px 0px 10px;
+  animation: heartbeat 1s infinite;    
+  display: inline-block;       
+  }
+  
+@keyframes heartbeat {
+  0%
+  {
+    transform: scale( 1 )       
+  }
+  20%
+  {
+    transform: scale( 1.2 )       
+  }
+  30%
+  {
+    transform: scale( 1.4 )       
+  }
+}
+
+/* ============ NAV BLOCK ============= */
+.nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  right: 60px;
+  
+}
+/* ----------- NAV TOP ---------------- */
+.nav-top {
+  position: relative;
+  right: 15px;
+  top: -16px;
+}
+/* ------ SOCIAL LINK ------- */
+.social-icon-list {
+  position: relative;
+  display: flex;
+}
+.social-icon-item span {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  margin: 0px 6px;
+  align-items: center;
+}
+.social-icon-item a {
+  position: relative;
+  
+}
+.icon {
+  display: inline-block;
+  align-items: center;
+}
+/* ------------ */
+.facebook-icon {
+  background-image: url(./assets/social_icon/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.facebook-icon:hover,
+.facebook-icon:focus {
+  background-image: url(./assets/social_icon/facebook–orange.svg);
+  transition: all 0.4s ease;
+}
+.massanger-icon {
+  background-image: url(./assets/social_icon/messanger.svg);    
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.massanger-icon:hover,
+.massanger-icon:focus {
+  background-image: url(./assets/social_icon/messanger-orange.svg);
+  transition: all 0.4s ease;
+}
+.youtube-icon {
+  background-image: url(./assets/social_icon/youtube.svg);    
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+.youtube-icon:hover,
+.youtube-icon:focus {
+  background-image: url(./assets/social_icon/youtube–orange.svg);
+  transition: all 0.4s ease;
+}
+.telegram-icon {
+  background-image: url(./assets/social_icon/telegramm.svg);    
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.telegram-icon:hover,
+.telegram-icon:focus {
+  background-image: url(./assets/social_icon/telegramm–orange.svg);
+  transition: all 0.4s ease;
+}
+
+/* ----- НАПИСАТИ ДИРЕКТОРУ ------ */
+.top-header-nav-item .header-button {
+  position: relative;
+  padding: 6px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;       
+  
+  background-color: #642802;  
+  /* border: 1px solid #3b0a0f; */
+  border-radius: 5px; 
+  width: 200px;
+  height: 35px; 
+  margin-top: 7px;
+}
+/* ============FEEDBACK-FORM===================== */
+.popap-feedback {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;   
+  overflow-y: auto;
+  overflow-x: hidden; 
+  transition: all 0.8s ease 0s;
+}
+.popap-feedback:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+.popap-feedback-form * {
+  outline: none;
+}
+
+.popap-feedback-form {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;      
+    padding: 30px 25px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+ 
+.popap-feedback-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: red;    
+}
+.form-title {
+    color: rgb(58, 65, 51);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin:  0px 0px 10px 0px;
+}
+.form-title-last {      
+    display: flex;
+    justify-content: flex-end;
+}
+.form-title span {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;    
+}
+.form-item {
+    margin: 0px 0px 20px 0px;
+}
+.form-label {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(56, 55, 55);   
+    
+}
+.form-input {
+    height: 50px;
+    padding: 0px 20px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.form-input:focus {
+   box-shadow:  0 0 15px #5c7274; 
+}
+.form-input._error {
+  box-shadow:  0 0 15px #e61919; 
+}
+
+textarea.form-input {
+    min-height: 120px;
+    resize: vertical;
+    padding: 15px;
+}
+
+.form-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: rgb(93, 105, 80);
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    box-shadow: 0 2px 0 rgb(21, 29, 21);
+    transition: background-color 0.5s ease 0s;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+}
+.form-button:hover {
+  background-color: rgb(49, 54, 44);
+}
+.form-button:active {
+    top: 3px;
+}
+
+/* ---TOP MENU STYLE--- */
+.top-header-nav-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list-item-link {
+  position: relative;
+  margin-right: -30px;
+}
+.top-header-nav-item {
+  margin-left: 30px;
+}
+
+.top-header-nav-item a {
+  font-size: 18px;
+  color: #fff;
+}
+.top-header-nav-item .cabinet {
+  display: inline-block;
+  font-family: 'Caveat', cursive;
+  font-size: 26px;
+  text-align: center;
+  line-height: 22px;
+  width: 75px;
+  margin-right: 15px;
+}
+
+/* ----------- NAV BOTTOM -------------- */
+.nav-bottom {
+  position: relative;
+  top: 20px;
+}
+.nav-bottom-list {
+  position: relative;
+  display: flex;
+}
+.nav-bottom-item {
+  margin: 5px 12px;
+  
+}
+.nav-bottom-item a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* ========= INTRO BLOCK============ */
+/* .intro {
+  position: relative;
+}
+.intro_innet {
+  background-image: url(./assets/images/ivano_fr1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+}
+.intro_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background-color: #2f1202f3;
+} */
+
+/* -----INTRO TEXT----- */
+/* .slogan { 
+  position: relative;  
+  display: inline-block;      
+  color: #fff;
+  line-height: 50px;
+  top: 8%;
+  margin-left: 3%;
+}
+
+.title-slogan-intro {
+  font-size: 40px;
+  font-weight: 900;
+  font-style: normal;
+}
+.slogan-slogan {
+font-family: 'Caveat', cursive;
+font-size: 50px;
+font-weight: 400;
+font-style: normal;
+} */
+
+@media (max-width: 1600px) {
+  /* =========== HEADER ================ */
+.header {
+  height: 150px;
+}
+.header-inner {
+  height: 150px;
+}
+
+/* ====== LOGO BLOCK ========= */
+.logo-block {
+  left: 50px;
+}
+.logo-img img {
+  width: 135px;
+  height: 125px;
+  margin-top: 7%;
+}
+.title-name-nav {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+/* --------- HEART -------- */
+.heart {
+  width: 35px;   
+  }
+
+/* ============ NAV BLOCK ============= */
+.nav {
+  right: 40px;
+}
+/* ----------- NAV TOP ---------------- */
+.nav-top {
+  position: relative;
+  right: 15px;
+  top: -10px;
+}
+/* ---TOP MENU STYLE--- */
+
+.nav-list-item-link {
+  margin-right: -30px;
+}
+.top-header-nav-item {
+  margin-left: 25px;
+}
+
+.top-header-nav-item a {
+  font-size: 18px;
+}
+.top-header-nav-item .cabinet {
+  font-size: 26px;
+  line-height: 22px;
+  width: 75px;
+  margin-right: 15px;
+}
+
+/* ----------- NAV BOTTOM -------------- */
+.nav-bottom {
+  top: 20px;
+}
+.nav-bottom-item {
+  margin: 5px 13px;
+}
+.nav-bottom-item a {
+  font-size: 16px;
+  font-weight: 500;
+}
+  
+}
+
+@media (max-width: 1440px) {
+  /* =========== HEADER ================ */
+.header {
+  height: 140px;
+}
+.header-inner {
+  height: 140px;
+}
+
+/* ====== LOGO BLOCK ========= */
+.logo-block {
+  left: 25px;
+}
+.logo-img img {
+  width: 120px;
+  height: 115px;
+  margin-top: 7%;
+}
+.title-name-nav {
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+/* --------- HEART -------- */
+.heart {
+  width: 30px;    
+  margin: 0px 0px 0px 10px;
+  }
+
+/* ============ NAV BLOCK ============= */
+.nav {
+  right: 20px;
+}
+/* ----------- NAV TOP ---------------- */
+.nav-top {
+  right: 15px;
+  top: -8px;
+}
+
+/* ---TOP MENU STYLE--- */
+
+.top-header-nav-item {
+  margin-left: 22px;
+}
+
+.top-header-nav-item a {
+  font-size: 18px;
+}
+.top-header-nav-item .cabinet {
+  font-size: 26px;
+  line-height: 22px;
+  width: 75px;
+  margin-right: 15px;
+}
+
+/* ----------- NAV BOTTOM -------------- */
+.nav-bottom {
+  top: 15px;
+}
+.nav-bottom-item {
+  margin: 5px 8px;
+}
+
+  
+}
+@media (max-width: 1280px) {
+  /* =========== HEADER ================ */
+.header {
+  height: 140px;
+}
+.header-inner {
+  height: 140px;
+}
+
+/* ====== LOGO BLOCK ========= */
+.logo-block {
+  left: 15px;
+}
+.logo-img img {
+  width: 100px;
+  height: 96px;
+  margin-top: 7%;
+}
+.title-name-nav {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+/* --------- HEART -------- */
+.heart {
+  width: 30px;    
+  margin: 0px 0px 0px 10px;
+  }
+
+/* ============ NAV BLOCK ============= */
+.nav {
+  right: 10px;
+}
+/* ----------- NAV TOP ---------------- */
+.nav-top {
+  right: 15px;
+  top: -8px;
+}
+/* ------ SOCIAL LINK ------- */
+
+.social-icon-item span {
+  width: 32px;
+  height: 32px;
+  margin: 0px 6px;
+}
+
+/* ---TOP MENU STYLE--- */
+
+.top-header-nav-item {
+  margin-left: 20px;
+}
+
+.top-header-nav-item a {
+  font-size: 18px;
+}
+.top-header-nav-item .cabinet {
+  font-size: 26px;
+  line-height: 22px;
+  width: 75px;
+  margin-right: 15px;
+}
+
+/* ----------- NAV BOTTOM -------------- */
+.nav-bottom {
+  top: 15px;
+}
+.nav-bottom-item {
+  margin: 5px 6px;
+}
+.nav-bottom-item a {
+  font-size: 16px;
+  font-weight: 500;
+}
+  
+}
+@media (max-width: 1180px) {
+/* ====== LOGO BLOCK ========= */
+.logo-block {
+  left: 15px;
+}
+.logo-img img {
+  display: none;
+}
+.title-name-nav {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+/* --------- HEART -------- */
+.heart {
+  width: 30px;    
+  margin: 0px 0px 0px 10px;
+  }
+
+/* ============ NAV BLOCK ============= */
+.nav {
+  right: 10px;
+}
+/* ----------- NAV TOP ---------------- */
+.nav-top {
+  right: 15px;
+  top: -8px;
+}
+/* ---TOP MENU STYLE--- */
+
+.top-header-nav-item {
+  margin-left: 20px;
+}
+
+.top-header-nav-item a {
+  font-size: 18px;
+}
+
+/* ----------- NAV BOTTOM -------------- */
+.nav-bottom {
+  top: 15px;
+}
+.nav-bottom-item {
+  margin: 5px 6px;
+}
+  
+}
+
+@media (max-width: 1080px) {
+  .title-name-nav {
+    display: none;
+  }
+}
