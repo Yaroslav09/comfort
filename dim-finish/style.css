@@ -16,6 +16,11 @@
   height: 150px;
 }
 
+/* приховує елементи меню потрібні для мобільної версії */
+.for-mobile-menu {
+    display: none;
+  }
+
 
 /* ========== HEADER ACTIVE BLOCK ============== */
 
@@ -94,7 +99,6 @@
   flex-direction: column;
   align-items: flex-end;
   right: 60px;
-  
 }
 /* ----------- NAV TOP ---------------- */
 .nav-top {
@@ -778,7 +782,7 @@ font-style: normal;
 }
 
 
-/* ------------------MEDIA------------------------- */
+/* ------------------MEDIA FOR MOBILE BURGER-MENU------------------------- */
 @media (max-width: 940px) {
   .social-icon-list {
     display: none;
@@ -790,7 +794,7 @@ font-style: normal;
       display: none;
   }
   .menu-icon {
-      z-index: 5;
+      z-index: 15;
       display: block;
       position: relative;
       width: 30px;
@@ -837,7 +841,8 @@ font-style: normal;
       position: fixed;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: center;  
+      top: 0;    
       width: 100%;
       height: 100%;
       background-color: rgb(0, 0, 0, 0.9);
@@ -861,11 +866,59 @@ font-style: normal;
       top: 0;
       min-width: 150px;
       margin: 5px 5px 5px 10px;
-      display: none;    
-        
-  }    
-  body._touch .nav-list-item.active-arrow .sub-nav-list {
+      display: none;  
+  }   
+  .second-sub-list-item {
+    position: relative;   
+      flex: 1 1 100%;   
+      top: 0;
+      min-width: 150px;
+      margin: 5px 5px 5px 10px;
+      display: none;  
+  } 
+  body._touch .nav-list-item.active-arrow .sub-nav-list  {
       display: block;
   }
 
+
 }
+@media (max-width: 939px) {
+  /* ============================================================================= */
+/* додаткові налаштування для мобільної версії */
+.title-slogan-intro {
+  font-size: 36px;
+}
+/* Зменшує напис Комфортний дім на інтро для мобільної версії */
+.slogan-slogan {
+  font-size: 28px;
+}
+/* Зменшує напис Ми хочемо... на інтро для мобільної версії */
+.for-mobile-menu {
+  display: inline-block;
+}
+/* Відображає для мобільної версії приховані елементи меню */
+.social-link-for-mobile {
+  display: flex;
+}
+/* Вирівнює іконки соц мереж в рядок */
+.header-button span {
+  font-size: 14px;
+}
+/* зменшує текст кнопки написати директору */
+.logo-img img {
+  display: block;
+}
+/* Показує логотип */
+.title-name-nav {
+  display: block;
+} 
+/* Показує напис Комфортний дім */
+.top-header-nav-item .cabinet {
+  width: 100%;
+}
+/* відображає напис мій кабінет в один рядок */  
+}
+
+
+
+
