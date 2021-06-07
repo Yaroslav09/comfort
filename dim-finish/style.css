@@ -401,7 +401,7 @@ body._pc .second-sub-list-item:hover .third-sub-nav-list {
 body._touch .nav-list {
   flex: 1 1 auto;
 }
-body._touch .nav-list-item {
+body._touch .nav-bottom-item {
   display: flex;
   align-items: center;
 }
