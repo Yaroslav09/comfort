@@ -483,7 +483,7 @@ body._touch .nav-list-item.active-arrow .nav-arrow{
 
 /*========= INTRO BLOCK============ */
 .intro {
-  position: relative;
+  position: relative;  
 }
 .intro_inner {
   background-image: url(./assets/images/ivano_fr1.webp);
@@ -492,6 +492,7 @@ body._touch .nav-list-item.active-arrow .nav-arrow{
   background-position: center;
   width: 100%;
   height: 800px;
+  height: 100vh;
 }
 .intro_bottom {
   position: absolute;
@@ -810,7 +811,7 @@ font-style: normal;
       height: 10%;
       width: 100%;
       transition: all 0.3s ease 0s;
-      background-color: rgb(87, 92, 92);
+      background-color: rgb(87, 92, 92);      
   }
   .menu-icon::before,
   .menu-icon::after {
@@ -824,7 +825,7 @@ font-style: normal;
   }
   .menu-icon span {
       top: 50%;
-      transform: scale(1) translate(0px, -50%);
+      transform: scale(1) translate(0px, -50%);      
   }
   .menu-icon.active-arrow span{
       transform: scale(0) translate(0px, -50%);
@@ -882,21 +883,25 @@ font-style: normal;
 
 
 }
-@media (max-width: 939px) {
+@media (max-width: 940px) {
   /* ============================================================================= */
 /* додаткові налаштування для мобільної версії */
+
 .title-slogan-intro {
   font-size: 36px;
 }
 /* Зменшує напис Комфортний дім на інтро для мобільної версії */
+
 .slogan-slogan {
-  font-size: 28px;
+  font-size: 34px;
 }
 /* Зменшує напис Ми хочемо... на інтро для мобільної версії */
+
 .for-mobile-menu {
   display: inline-block;
 }
 /* Відображає для мобільної версії приховані елементи меню */
+
 .social-link-for-mobile {
   display: flex;
 }
@@ -905,10 +910,12 @@ font-style: normal;
   font-size: 14px;
 }
 /* зменшує текст кнопки написати директору */
+
 .logo-img img {
   display: block;
 }
 /* Показує логотип */
+
 .title-name-nav {
   display: block;
 } 
@@ -919,6 +926,50 @@ font-style: normal;
 /* відображає напис мій кабінет в один рядок */  
 }
 
+/* =========== 640 ============== */
+@media (max-width: 640px) {
+  .title-slogan-intro {
+    /* font-size: 36px; */
+    display: none;
+  }
+  /* Зменшує напис Комфортний дім на інтро для мобільної версії */
+  
+  .slogan-slogan {
+    font-size: 34px;
+    text-align: center;
+    line-height: 34px;    
+  }
+  /* Зменшує напис Ми хочемо... на інтро для мобільної версії */
+
+ 
+}
+/* =========== 440 ============== */
+@media (max-width: 440px) {
+  .title-slogan-intro {
+    display: none;
+  }
+  /* Зменшує напис Комфортний дім на інтро для мобільної версії */
+  
+  .slogan-slogan {
+    font-size: 30px;
+    text-align: center;
+    line-height: 34px;
+    /* margin-top: 2%; */
+  }
+  /* Зменшує напис Ми хочемо... на інтро для мобільної версії */
+
+  .logo-img img {
+    display: none;
+  }
+  /* Показує логотип */
+
+  .header-inner {
+    height: 90px;
+  }
+  .intro_bottom {
+    height: 90px;
+  }
+}
 
 
 
