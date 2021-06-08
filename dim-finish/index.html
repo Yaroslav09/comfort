@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,12 +16,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-  
+
   <!-- Підключення стилів -->
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./style.css">
+  <!-- Підключення стилів для слайдера-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <title>Комфортний дім</title>
 </head>
+
 <body>
   <header class="header header-element">
     <div class="container">
@@ -32,9 +37,9 @@
           </div>
           <div class="logo-title">
             <p class="title-name-nav">
-              "Комфортний <br> <span>дім"</span> 
+              "Комфортний <br> <span>дім"</span>
               <img src="./assets/images/green-heart1.png" alt="icon green heart" class="heart">
-            </p>          
+            </p>
           </div>
         </div>
         <!-- NAV BLOCK -->
@@ -48,11 +53,16 @@
               <!-- Верхнє меню HEADER-->
               <li class="top-header-nav-item"><a href="#">Довідник</a></li>
               <li class="top-header-nav-item"><a href="#">Контакти</a></li>
-              <li class="top-header-nav-item"><a href="#popap-feedback" class="header-button"> <span>Написати директору</span></a></li>
-              <li class="top-header-nav-item"><a href="#"><img src="./assets/icons/eye_white.svg" alt="icon eye"></a></li>
-              <li class="top-header-nav-item"> <a href="#"><img src="./assets/icons/search-white.svg" alt="icon search"></a></li>
-              <li class="top-header-nav-item"><a href="http://portal.dimif.if.ua/" target="blank" class="nav-list-item-link"> <img src="./assets/icons/home.svg" alt="icon home"> </a></li>
-              <li class="top-header-nav-item"><a href="http://portal.dimif.if.ua/" target="blank" class="top-header-nav-link cabinet">Мій кабінет</a></li>
+              <li class="top-header-nav-item"><a href="#popap-feedback" class="header-button"> <span>Написати
+                    директору</span></a></li>
+              <li class="top-header-nav-item"><a href="#"><img src="./assets/icons/eye_white.svg" alt="icon eye"></a>
+              </li>
+              <li class="top-header-nav-item"> <a href="#"><img src="./assets/icons/search-white.svg"
+                    alt="icon search"></a></li>
+              <li class="top-header-nav-item"><a href="http://portal.dimif.if.ua/" target="blank"
+                  class="nav-list-item-link"> <img src="./assets/icons/home.svg" alt="icon home"> </a></li>
+              <li class="top-header-nav-item"><a href="http://portal.dimif.if.ua/" target="blank"
+                  class="top-header-nav-link cabinet">Мій кабінет</a></li>
               <!-- Посилання на соціальні мережі HEADER-->
               <li class="social-icon-item">
                 <a href="https://www.facebook.com/KomfortDim/" target="_blank" class="social-icon-link">
@@ -72,9 +82,9 @@
               <li class="social-icon-item">
                 <a href="" class="social-icon-link">
                   <span class="icon telegram-icon"></span>
-              </a>
+                </a>
               </li>
-              
+
             </ul>
           </div>
           <!-- NAV BOTTOM HEADER -->
@@ -87,161 +97,180 @@
                 <a href="#">Про нас</a>
                 <!-- SUB MENU ПРО НАС -->
                 <span class="nav-arrow"></span>
-                  <ul class="sub-nav-list">
-                    <li class="sub-list-item"><a href="./pages/leadership.html" target="_blank" class="sub-list-link">Керівництво</a></li>
-                    <li class="sub-list-item"><a href="./pages/structure.html" target="_blank" class="sub-list-link">Структура</a></li>
-                    <li class="sub-list-item"><a href="./pages/structure.html" target="_blank" class="sub-list-link">Вакансії</a></li>
-                    <li class="sub-list-item"><a href="./pages/directory.html" target="_blank" class="sub-list-link">Довідник</a></li>
-                    <li class="sub-list-item"><a href="./pages/about.html" target="_blank" class="sub-list-link">Про нас</a></li>                                                                
-                  </ul>                        
+                <ul class="sub-nav-list">
+                  <li class="sub-list-item"><a href="./pages/leadership.html" target="_blank"
+                      class="sub-list-link">Керівництво</a></li>
+                  <li class="sub-list-item"><a href="./pages/structure.html" target="_blank"
+                      class="sub-list-link">Структура</a></li>
+                  <li class="sub-list-item"><a href="./pages/structure.html" target="_blank"
+                      class="sub-list-link">Вакансії</a></li>
+                  <li class="sub-list-item"><a href="./pages/directory.html" target="_blank"
+                      class="sub-list-link">Довідник</a></li>
+                  <li class="sub-list-item"><a href="./pages/about.html" target="_blank" class="sub-list-link">Про
+                      нас</a></li>
+                </ul>
               </li>
               <!-- ДОКУМЕНТИ -->
               <li class="nav-bottom-item nav-list-item">
                 <a href="#">Документи</a>
-                <span class="nav-arrow"></span>                
+                <span class="nav-arrow"></span>
                 <ul class="sub-nav-list">
-                    <li class="sub-list-item">
-                        <a href="" class="sub-list-link">Нормативно-правова база</a>
-                        <ul class="second-sub-nav-list">
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Законодавство</a>
-                                <ul class="third-sub-nav-list">
-                                    <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Закони України</a></li>
-                                    <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Статут підприємства</a></li>
-                                    <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Розпорядчі документи</a></li>
-                                    <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Роспорядження</a></li>
-                                    <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Накази</a></li>
-                                    <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Рішення сесії та МВК</a></li>
-                                </ul>
-                            </li>                                        
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Проєкти документів</a>
-                            </li>
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Антикорупційне законодавство</a>
-                            </li>
+                  <li class="sub-list-item">
+                    <a href="" class="sub-list-link">Нормативно-правова база</a>
+                    <ul class="second-sub-nav-list">
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Законодавство</a>
+                        <ul class="third-sub-nav-list">
+                          <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Закони України</a></li>
+                          <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Статут підприємства</a>
+                          </li>
+                          <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Розпорядчі
+                              документи</a></li>
+                          <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Роспорядження</a></li>
+                          <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Накази</a></li>
+                          <li class="third-sub-list-item"><a href="" class="third-sub-list-link">Рішення сесії та
+                              МВК</a></li>
                         </ul>
-                    </li>                              
-                    <li class="sub-list-item">
-                        <a href="" class="sub-list-link">Документи</a>
-                        <ul class="second-sub-nav-list">
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Бланки</a>
-                                <ul class="third-sub-nav-list">
-                                    <li class="third-sub-list-item"><a href="" class="third-sub-list-link">договору на утримання ЖБ та прибудинкової території</a></li>
-                                    <li class="third-sub-list-item"><a href="" class="third-sub-list-link">договору про розірвання угоди</a></li>
-                                    <li class="third-sub-list-item"><a href="" class="third-sub-list-link">заяви</a></li>
-                                    <li class="third-sub-list-item"><a href="" class="third-sub-list-link">протоколів</a></li>
-                                </ul>
-                            </li>                                        
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Проєктно-кошторисна документація</a>
-                            </li>
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Договори підрядних організацій</a>
-                            </li>
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Акти виконаних робіт</a>
-                            </li>
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Акти приймання-передачі</a>
-                            </li>
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Протоколи зборів</a>
-                            </li>
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Фінансовий звіт</a>
-                            </li>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Проєкти документів</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Антикорупційне законодавство</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-list-item">
+                    <a href="" class="sub-list-link">Документи</a>
+                    <ul class="second-sub-nav-list">
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Бланки</a>
+                        <ul class="third-sub-nav-list">
+                          <li class="third-sub-list-item"><a href="" class="third-sub-list-link">договору на утримання
+                              ЖБ та прибудинкової території</a></li>
+                          <li class="third-sub-list-item"><a href="" class="third-sub-list-link">договору про розірвання
+                              угоди</a></li>
+                          <li class="third-sub-list-item"><a href="" class="third-sub-list-link">заяви</a></li>
+                          <li class="third-sub-list-item"><a href="" class="third-sub-list-link">протоколів</a></li>
                         </ul>
-                    </li>                                
-                    
-                    <li class="sub-list-item">
-                        <a href="" class="sub-list-link">Конкурси</a>
-                    </li>
-                    <li class="sub-list-item">
-                        <a href="" class="sub-list-link">Тарифи</a>
-                    </li>
-                    <li class="sub-list-item">
-                        <a href="https://data.gov.ua/" class="sub-list-link" target="blank" >data.gov.ua <br> (портал відкритих даних)</a>
-                    </li>
-                    <li class="sub-list-item">
-                        <a href="https://spending.gov.ua/new/disposers" class="sub-list-link" target="blank">spending.gov.ua</a>
-                    </li>
-                    <li class="sub-list-item">
-                        <a href="" class="sub-list-link">Роботи</a>
-                        <ul class="second-sub-nav-list second-sub-nav-list-work ">
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Річні плани</a>
-                            </li>                                        
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Фотозвіти та виконані роботи</a>
-                            </li>
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Плани робіт</a>
-                            </li>
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Графіки підрядників</a>
-                            </li>
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Звіти про підряди</a>
-                            </li>
-                            <li class="second-sub-list-item">
-                                <a href="" class="second-sub-list-link">Перевірки</a>
-                            </li>                                        
-                        </ul>
-                    </li>
-                    <li class="sub-list-item">
-                        <a href="https://www.facebook.com/HotelBanderstadt/" class="sub-list-link" target="blank">Про готель "Бандерштат"</a>
-                    </li>                                    
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Проєктно-кошторисна документація</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Договори підрядних організацій</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Акти виконаних робіт</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Акти приймання-передачі</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Протоколи зборів</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Фінансовий звіт</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="sub-list-item">
+                    <a href="" class="sub-list-link">Конкурси</a>
+                  </li>
+                  <li class="sub-list-item">
+                    <a href="" class="sub-list-link">Тарифи</a>
+                  </li>
+                  <li class="sub-list-item">
+                    <a href="https://data.gov.ua/" class="sub-list-link" target="blank">data.gov.ua <br> (портал
+                      відкритих даних)</a>
+                  </li>
+                  <li class="sub-list-item">
+                    <a href="https://spending.gov.ua/new/disposers" class="sub-list-link"
+                      target="blank">spending.gov.ua</a>
+                  </li>
+                  <li class="sub-list-item">
+                    <a href="" class="sub-list-link">Роботи</a>
+                    <ul class="second-sub-nav-list second-sub-nav-list-work ">
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Річні плани</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Фотозвіти та виконані роботи</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Плани робіт</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Графіки підрядників</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Звіти про підряди</a>
+                      </li>
+                      <li class="second-sub-list-item">
+                        <a href="" class="second-sub-list-link">Перевірки</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-list-item">
+                    <a href="https://www.facebook.com/HotelBanderstadt/" class="sub-list-link" target="blank">Про готель
+                      "Бандерштат"</a>
+                  </li>
                 </ul>
               </li>
               <!-- ПУБЛІЧНІ ЗАКУПІВЛІ -->
               <li class="nav-bottom-item nav-list-item">
                 <a href="#">Публічні закупівлі</a>
                 <span class="nav-arrow"></span>
-                  <!-- SUB MENU ПУБЛІЧНІ ЗАКУПІВЛІ -->
-                  <ul class="sub-nav-list">
-                    <li class="sub-list-item"><a href="#" target="_blank" class="sub-list-link">Річний план закупівель</a></li>
-                    <li class="sub-list-item"><a href="#" target="_blank" class="sub-list-link">Оголошення про проведення торгів</a></li>
-                    <li class="sub-list-item"><a href="#" target="_blank" class="sub-list-link">Спрощені закупівлі</a></li>
-                    <li class="sub-list-item"><a href="#" target="_blank" class="sub-list-link">Відкриті торги</a></li>
-                    <li class="sub-list-item"><a href="#" target="_blank" class="sub-list-link">Звіт про укладені договори</a></li>                                                    
-                  </ul>
+                <!-- SUB MENU ПУБЛІЧНІ ЗАКУПІВЛІ -->
+                <ul class="sub-nav-list">
+                  <li class="sub-list-item"><a href="#" target="_blank" class="sub-list-link">Річний план закупівель</a>
+                  </li>
+                  <li class="sub-list-item"><a href="#" target="_blank" class="sub-list-link">Оголошення про проведення
+                      торгів</a></li>
+                  <li class="sub-list-item"><a href="#" target="_blank" class="sub-list-link">Спрощені закупівлі</a>
+                  </li>
+                  <li class="sub-list-item"><a href="#" target="_blank" class="sub-list-link">Відкриті торги</a></li>
+                  <li class="sub-list-item"><a href="#" target="_blank" class="sub-list-link">Звіт про укладені
+                      договори</a></li>
+                </ul>
               </li>
               <!-- НОВИНИ ЖКГ -->
               <li class="nav-bottom-item nav-list-item">
                 <a href="#">Новини ЖКГ</a>
                 <span class="nav-arrow"></span>
-                  <!-- SUB MENU НОВИНИ ЖКГ -->
-                  <ul class="sub-nav-list">
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Дороги</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Благоустрій</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Будинкове управління</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Водопостачання</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Газопостачання</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Електропостачання</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Теплопостачання</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Побутові відходи</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Транспорт</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Новини по Україні</a></li>
-                  </ul>
+                <!-- SUB MENU НОВИНИ ЖКГ -->
+                <ul class="sub-nav-list">
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Дороги</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Благоустрій</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Будинкове управління</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Водопостачання</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Газопостачання</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Електропостачання</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Теплопостачання</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Побутові відходи</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Транспорт</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Новини по Україні</a></li>
+                </ul>
               </li>
               <!-- НОВИНИ КД -->
               <li class="nav-bottom-item nav-list-item">
                 <a href="#">Новини КД</a>
                 <span class="nav-arrow"></span>
-                  <!-- SUB MENU НОВИНИ КД -->
-                  <ul class="sub-nav-list">
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Повідомлення</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Прес-реліз</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Публікації</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Галерея (звіти)</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Перевірки</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Звіти</a></li>
-                      <li class="sub-list-item"><a href="https://www.facebook.com/KomfortDim/" target="balnk" class="sub-list-link">Ми у Facebook</a></li>
-                      <li class="sub-list-item"><a href="https://www.facebook.com/HotelBanderstadt/" target="blank" class="sub-list-link">Готель "Бандерштат"</a></li>
-                      <li class="sub-list-item"><a href="#" class="sub-list-link">Різне</a></li>
-                  </ul>                
+                <!-- SUB MENU НОВИНИ КД -->
+                <ul class="sub-nav-list">
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Повідомлення</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Прес-реліз</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Публікації</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Галерея (звіти)</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Перевірки</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Звіти</a></li>
+                  <li class="sub-list-item"><a href="https://www.facebook.com/KomfortDim/" target="balnk"
+                      class="sub-list-link">Ми у Facebook</a></li>
+                  <li class="sub-list-item"><a href="https://www.facebook.com/HotelBanderstadt/" target="blank"
+                      class="sub-list-link">Готель "Бандерштат"</a></li>
+                  <li class="sub-list-item"><a href="#" class="sub-list-link">Різне</a></li>
+                </ul>
               </li>
               <!-- КАРТИ РОБІТ -->
               <li class="nav-bottom-item nav-list-item">
@@ -249,28 +278,32 @@
               </li>
               <!-- ПОСЛУГИ -->
               <li class="nav-bottom-item nav-list-item">
-                <a href="#">Послуги</a>                
+                <a href="#">Послуги</a>
                 <span class="nav-arrow"></span>
-                  <!-- SUB MENU ПОСЛУГИ -->
-                  <ul class="sub-nav-list">
-                      <li class="sub-list-item"><a href="./pages/services.html" target="_blank" class="sub-list-link">Послуги</a></li>
-                      <li class="sub-list-item"><a href="" class="sub-list-link">Додаткові послуги</a></li>                                                                
-                  </ul>
+                <!-- SUB MENU ПОСЛУГИ -->
+                <ul class="sub-nav-list">
+                  <li class="sub-list-item"><a href="./pages/services.html" target="_blank"
+                      class="sub-list-link">Послуги</a></li>
+                  <li class="sub-list-item"><a href="" class="sub-list-link">Додаткові послуги</a></li>
+                </ul>
               </li>
               <!-- КОНТАКТ_ЦЕНТРИ -->
               <li class="nav-bottom-item nav-list-item">
                 <a href="./pages/contact-center.html" target="_blank">Контакт-центри</a>
               </li>
 
-<!-- ==================ПРИХОВАНЕ МЕНЮ ДЛЯ МОБІЛЬНОЇ ВЕРСІЇ=============================== -->
+              <!-- ==================ПРИХОВАНЕ МЕНЮ ДЛЯ МОБІЛЬНОЇ ВЕРСІЇ=============================== -->
 
               <li class="nav-list-item for-mobile-menu top-header-nav-item"><a href="#">Довідник</a></li>
               <li class="nav-list-item for-mobile-menu top-header-nav-item"><a href="#">Контакти</a></li>
-              <li class="nav-list-item for-mobile-menu top-header-nav-item"><a href="#popap-feedback" class="header-button"> <span>Написати директору</span></a></li>              
-              <li class="nav-list-item for-mobile-menu top-header-nav-item"> <a href="#"><img src="./assets/icons/search-white.svg" alt="icon search"></a></li>              
-              <li class="nav-list-item for-mobile-menu top-header-nav-item"><a href="http://portal.dimif.if.ua/" target="blank" class="top-header-nav-link cabinet">Мій кабінет</a></li>
-              
-              <!-- Посилання на соціальні мережі HEADER-->   
+              <li class="nav-list-item for-mobile-menu top-header-nav-item"><a href="#popap-feedback"
+                  class="header-button"> <span>Написати директору</span></a></li>
+              <li class="nav-list-item for-mobile-menu top-header-nav-item"> <a href="#"><img
+                    src="./assets/icons/search-white.svg" alt="icon search"></a></li>
+              <li class="nav-list-item for-mobile-menu top-header-nav-item"><a href="http://portal.dimif.if.ua/"
+                  target="blank" class="top-header-nav-link cabinet">Мій кабінет</a></li>
+
+              <!-- Посилання на соціальні мережі HEADER-->
               <div class="social-link-for-mobile">
                 <li class="nav-list-item for-mobile-menu social-icon-item">
                   <a href="https://www.facebook.com/KomfortDim/" target="_blank" class="social-icon-link">
@@ -290,71 +323,310 @@
                 <li class="nav-list-item for-mobile-menu social-icon-item">
                   <a href="" class="social-icon-link">
                     <span class="icon telegram-icon"></span>
-                </a>
+                  </a>
                 </li>
               </div>
-<!-- ==================КІНЕЦЬ ПРИХОВАНЕ МЕНЮ ДЛЯ МОБІЛЬНОЇ ВЕРСІЇ=============================== -->
+              <!-- ==================КІНЕЦЬ ПРИХОВАНЕ МЕНЮ ДЛЯ МОБІЛЬНОЇ ВЕРСІЇ=============================== -->
             </ul>
           </div>
         </nav>
 
         <!-- ============== FEEDBACK_FORM (НАПИСАТИ ДИРЕКТОРУ)======================= -->
-        <div id = "popap-feedback" class = "popap-feedback popap-link">
-          <form action="#" method="post" id = "feedback-form" class="popap-feedback-form" >
-              <a href="#" class="popap-feedback-close">×</a> 
-              <div class="form-title">
-                  <p>Ми знаходимо в житті лише те,</p>
-                  <p>що самі вкладаємо в нього</p>
-                  <p class = "form-title-last"><span>(Ральф Уолдо Емерсон)</span></p>
-              </div>  
-              <fieldset>
-                  <div class="form-item">
-                      <label for="fname" class="form-label">Ім'я*:</label>
-                      <input type="text" id="fname" class="form-input _req" name="fname" placeholder="Введіть ваше ім'я" >
-                  </div>
-                  <div class="form-item">
-                      <label for="lname" class="form-label">Прізвище*:</label>
-                      <input type="text" id="lname" class="form-input _req" name="lname" placeholder="Введіть ваше прізвище">
-                  </div>
-                  <div class="form-item">
-                      <label for="phone" class="form-label">Телефон*:</label>
-                      <input type="tel" id="phone" class="form-input _req" name="phone" placeholder="Введіть ваш номер телефону">
-                  </div>
-                  <div class="form-item">
-                      <label for="email" class="form-label">Email*:</label>
-                      <input type="email" id="email" class="form-input _req _email" name="email" placeholder="Введіть ваш email">
-                  </div>
-                  <div class="form-item">
-                      <label for="message" class="form-label">Напишіть нам:</label>
-                      <textarea name="message" id="message" class="form-input" placeholder="Введіть ваше повідомлення"></textarea>
-                      
-                  </div>
-                  <button type="submit" class="form-button">Надіслати</button>
-              </fieldset>                
-          </form>        
+        <div id="popap-feedback" class="popap-feedback popap-link">
+          <form action="#" method="post" id="feedback-form" class="popap-feedback-form">
+            <a href="#" class="popap-feedback-close">×</a>
+            <div class="form-title">
+              <p>Ми знаходимо в житті лише те,</p>
+              <p>що самі вкладаємо в нього</p>
+              <p class="form-title-last"><span>(Ральф Уолдо Емерсон)</span></p>
+            </div>
+            <fieldset>
+              <div class="form-item">
+                <label for="fname" class="form-label">Ім'я*:</label>
+                <input type="text" id="fname" class="form-input _req" name="fname" placeholder="Введіть ваше ім'я">
+              </div>
+              <div class="form-item">
+                <label for="lname" class="form-label">Прізвище*:</label>
+                <input type="text" id="lname" class="form-input _req" name="lname" placeholder="Введіть ваше прізвище">
+              </div>
+              <div class="form-item">
+                <label for="phone" class="form-label">Телефон*:</label>
+                <input type="tel" id="phone" class="form-input _req" name="phone"
+                  placeholder="Введіть ваш номер телефону">
+              </div>
+              <div class="form-item">
+                <label for="email" class="form-label">Email*:</label>
+                <input type="email" id="email" class="form-input _req _email" name="email"
+                  placeholder="Введіть ваш email">
+              </div>
+              <div class="form-item">
+                <label for="message" class="form-label">Напишіть нам:</label>
+                <textarea name="message" id="message" class="form-input"
+                  placeholder="Введіть ваше повідомлення"></textarea>
+
+              </div>
+              <button type="submit" class="form-button">Надіслати</button>
+            </fieldset>
+          </form>
         </div>
         <!-- END FEEDBACK_FORM -->
       </div>
     </div>
   </header>
 
-  
-
-  </div>
   <section class="intro">
     <div class="intro_inner">
       <div class="intro_bottom">
         <div class="slogan">
-          <p class = "title-slogan-intro">КП "Комфортний дім"</p>
+          <p class="title-slogan-intro">КП "Комфортний дім"</p>
           <p class="slogan-slogan">
-              МИ хочемо, щоб Вам було комфортно з нами!
+            МИ хочемо, щоб Вам було комфортно з нами!
           </p>
         </div>
       </div>
     </div>
   </section>
-  
+
+
+
+  <!-- ========================================================== -->
+  <!-- ==================SLIDER-NEWS======================================== -->
+  <section class="slider">
+    <!-- <div class="container"> -->
+    <div class="slaider-inner">
+
+      <!-- Slider main container -->
+      <div class="image-slaider swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="image-slaider-wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-image">
+              <a href="#" class="slider-image-link">
+                <img src="./images/news/Screenshot_1.jpg" alt="">
+                <p class="title-news">
+                  Новини Комфортного дому
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-image">
+              <a href="#" class="slider-image-link">
+                <img src="./images/news/Screenshot_2.jpg" alt="">
+                <p class="title-news">
+                  Новини Комфортного дому
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-image">
+              <a href="#" class="slider-image-link">
+                <img src="./images/news/Screenshot_3.jpg" alt="">
+                <p class="title-news">
+                  Привітання Марцінківа.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-image">
+              <a href="https://www.facebook.com/watch/?v=2874907046058190" target="_blank" class="slider-image-link">
+                <img src="./images/news/Screenshot_4.jpg" alt="">
+                <p class="title-news">
+                  Привітання директора.
+                </p>
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+    </div>
+    <!-- </div> -->
+  </section>
+
+  <!-- ===============SLIDER TWO============================= -->
+
+  <section class="slider-works">
+    <!-- <div class="container"> -->
+    <div class="slaider-works-inner">
+      <div id="result"></div>
+
+      <h5 class="slaider-works-title">Виконані роботи</h5>
+      <!-- Slider main container -->
+      <div class="image-slaider-works swiper-container-works">
+        <!-- Additional required wrapper -->
+
+
+
+        <div id="sliderrr" class="image-slaider-works-wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-works-image">
+              <a href="#" class="slider-works-image-link">
+                <img src="./images/title-slider/garden.jpg" alt="">
+                <p class="title-news">
+                  Косіння трави
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-works-image">
+              <a href="#" class="slider-works-image-link">
+                <img src="./images/title-slider/light.jpg" alt="">
+                <p class="title-news">
+                  Освітлення та елктропостачання
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-works-image">
+              <a href="#" class="slider-works-image-link">
+                <img src="./images/title-slider/44730a.jpg" alt="">
+                <p class="title-news">
+                  монтаж, демонтаж
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-works-image">
+              <a href="#" class="slider-works-image-link">
+                <img src="./images/title-slider/lift.png" alt="">
+                <p class="title-news">
+                  ліфтове господарство
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-works-image">
+              <a href="#" class="slider-works-image-link">
+                <img src="./images/title-slider/clean.jpg" alt="">
+                <p class="title-news">
+                  прибирання прибудинкових територій
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-works-image">
+              <a href="#" class="slider-works-image-link">
+                <img src="./images/title-slider/clean1.jpg" alt="">
+                <p class="title-news">
+                  прибирання сходових кліток
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-works-image">
+              <a href="#" class="slider-works-image-link">
+                <img src="./images/title-slider/roof.jpg" alt="">
+                <p class="title-news">
+                  обслуговування дахів
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-works-image">
+              <a href="#" class="slider-works-image-link">
+                <img src="./images/title-slider/truba.jpg" alt="">
+                <p class="title-news">
+                  водопровідні мережі
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-works-image">
+              <a href="#" class="slider-works-image-link">
+                <img src="./images/title-slider/Webp.net-compress-image.jpg" alt="">
+                <p class="title-news">
+                  ремонт електрощитових
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="image-slaider-slide swiper-slide">
+            <div class="image-slider-works-image">
+              <a href="#" class="slider-works-image-link">
+                <img src="./images/title-slider/children.jpg" alt="">
+                <p class="title-news">
+                  дитячі майданчики
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div id="button-works-prev" class="swiper-button-prev button-works-prev"></div>
+        <div id="button-works-next" class="swiper-button-next button-works-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+    </div>
+    <!-- </div> -->
+  </section>
+
+  <!-- ============================== -->
+
+
+  <!-- EVENT -->
+  <section class="event">
+    <div class="container">
+      <div class="event-element">
+        <h2>Поточні роботи</h2>
+        <iframe src="https://1580.if.ua/frame/?jid=4&fs=8&hr=0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================================== -->
+  <!-- MY MANAGER -->
+  <section class="manager">
+    <div class="container">
+      <div class="manager-form">
+        <h3>Мій управитель</h3>
+        <form class="manager-form-send">
+          <input id="search" class="submit-email" type="text" placeholder="Введіть назву вулиці">
+          <input class="submit-btn" type="submit" value="Пошук">
+        </form>
+      </div>
+      <div id="match-list"></div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./index.js"></script>
   <script src="./feedback_form.js"></script>
 </body>
+
 </html>
