@@ -214,6 +214,7 @@ const outputHtml = matches => {
 
         matchList.innerHTML = html;
     }
+
 }
 
 search.addEventListener('input', () => searchStates(search.value))
