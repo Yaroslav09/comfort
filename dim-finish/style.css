@@ -1413,6 +1413,10 @@ small, .small {
   color: #fff;
   font-size: 18px;
 }
+.user-list { 
+  max-height: 400px;
+  overflow-y: auto;  
+}
 
 @media (max-width: 700px) {
   .manager {    
@@ -1492,6 +1496,9 @@ small, .small {
   small, .small {
     font-size: 18px;
   }
+  .user-list { 
+    max-height: 300px;    
+  }
   
 }
 
@@ -1545,6 +1552,9 @@ small, .small {
   }
   .text-primary {
     font-size: 20px;
+  }
+  .user-list { 
+    max-height: 200px;    
   }
   
 }
