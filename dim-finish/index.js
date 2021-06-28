@@ -213,6 +213,8 @@ const outputHtml = matches => {
     `).join('');
 
         matchList.innerHTML = html;
+    } else {
+        matchList.innerHTML = '';
     }
 
 }
